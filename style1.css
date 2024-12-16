@@ -8,27 +8,46 @@ body {
   header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 20px ;
     text-align: center;
   }
+  header h1 {
+    margin: 5px 0; /* Keep a small margin for the header title */
+  }
   
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   header h1 {
     margin: 0;
   }
-  
+  .logo img {
+    height: 80px; /* Adjust logo size */
+    width: auto;
+    display: block;
+  }
+  .logo :hover{
+    transform: scale(1.1);
+  }
   nav ul {
+    display: flex;
     list-style: none;
     padding: 0;
+    margin: 5px;
   }
   
   nav ul li {
     display: inline;
     margin: 0 15px;
+    align-items: center;
   }
   
   nav ul li a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
+    font-size: 20px;
   }
   a:hover {
     color: rgb(64, 64, 236);
